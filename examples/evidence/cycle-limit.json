@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "run_id": "demo-run-004",
+  "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "remediation_cycles": 2,
+  "task": {
+    "id": "DEMO-001",
+    "summary": "Validate pagination boundaries in a fictional catalogue API.",
+    "human_scope_approved": true,
+    "risk": "low",
+    "requested_action": "prepare_change"
+  },
+  "implementation": {
+    "agent_id": "demo-implementer",
+    "commit_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "summary": "Synthetic implementation record; no real change or deployment represented."
+  },
+  "reviews": [
+    {
+      "role": "backend",
+      "agent_id": "demo-reviewer-backend",
+      "commit_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "verdict": "FAIL",
+      "findings": [
+        "An out-of-range page offset produces an incorrect response."
+      ],
+      "evidence": "Synthetic negative review snapshot."
+    },
+    {
+      "role": "frontend",
+      "agent_id": "demo-reviewer-frontend",
+      "commit_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "verdict": "PASS",
+      "findings": [],
+      "evidence": "Synthetic passing review snapshot."
+    },
+    {
+      "role": "pr_readiness",
+      "agent_id": "demo-reviewer-pr_readiness",
+      "commit_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "verdict": "PASS",
+      "findings": [],
+      "evidence": "Synthetic passing review snapshot."
+    },
+    {
+      "role": "technical_qa",
+      "agent_id": "demo-reviewer-technical_qa",
+      "commit_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "verdict": "PASS",
+      "findings": [],
+      "evidence": "Synthetic passing review snapshot."
+    }
+  ],
+  "ci_checks": [
+    {
+      "name": "build",
+      "commit_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "result": "success",
+      "evidence": "Synthetic passing CI snapshot; no real job or run ID."
+    },
+    {
+      "name": "unit",
+      "commit_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "result": "success",
+      "evidence": "Synthetic passing CI snapshot; no real job or run ID."
+    },
+    {
+      "name": "lint",
+      "commit_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "result": "success",
+      "evidence": "Synthetic passing CI snapshot; no real job or run ID."
+    }
+  ]
+}
